@@ -2,11 +2,11 @@
 
 **Ola! Meu nome e Gabryel Olavo🗿🍷**
 
- **-Meu e-mail de contato de estudante e: gabryel.leite@escola.pr.gov.br**
+ **-Meu e-mail de contato de estudante e: gabryel.leite@escola.pr.gov.br📒**
  
- **-Meu e-mail para contato pessoal e: ademarrodriguesleite@hotmail.com**
+ **-Meu e-mail para contato pessoal e: ademarrodriguesleite@hotmail.com🕵🏾**
  
- **-Meu Instagram: @_gabyolavo**
+ **-Meu Instagram: @_gabyolavo🥷🏽**
  
  **-sou estudante do segundo ano de desenvolvimento de sistemas🖥**
  
