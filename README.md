@@ -1,6 +1,6 @@
 # gabryel olavo souza leite👾 
 
-**Ola! Meu nome e Gabryel Olavo**
+**Ola! Meu nome e Gabryel Olavo🗿🍷**
 
  **-Meu e-mail de contato de estudante e: gabryel.leite@escola.pr.gov.br**
  
