@@ -1,0 +1,45 @@
+header{
+    background-color:#fa9cb8;
+    padding: 20px;
+}
+
+#logo{
+    border-radius: 500px;
+    width: 350px;
+    height: 350px;
+}
+
+@font-face {
+    font-family: 'open sans';
+    src: url('OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+.titulo-principal{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-10%, -50%);
+    font-size: 35px;
+    font-family: 'open sans';
+    color: #ffdbe6;
+}
+
+main{
+    width: 940px;
+    margin: auto;
+}
+
+form{
+    margin: 20px 0;
+}
+form label, form p{
+   
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px: /*10px para baixo*/
+}
+#jogojogos2{
+    border-radius:500px;
+    height:100px;
+    width:100px;
+}
