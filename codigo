@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique Aqui</title>
+    <style>
+        body{
+            background-color: rgb(85, 32, 177);
+        }
+        h1{
+            color: rgb(255, 255, 255);
+            font-size: 2.9em;
+        }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #322121;
+        text-align: center;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 180px;
+    }
+
+    button {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 30px 60px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 70px;
+    }
+
+    button:hover {
+        background-color: #cd3ce7;
+        border-color:#000000
+    }
+</style>
+</head>
+<body>
+    <h1>Botãos animados</h1>
+    <p class="par1">Botões com links</p>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=YXLPUiB60iM'">Surra</button>
+            <button class="button" onclick="window.location.href='https://github.com/'">Github</button>
+            <button class="button" onclick="window.location.href='https://www.google.com/'">google</button>
+        </div>
+    </body>
+    </html>
+    
+    <script>
+        //seleciona um objeto pela TAG
+
+        var p1= window.document.getElementsByTagName("p")[1]
+        p1.style.color = "yellow"
+        window.document.writeln("Manipulando por Tag = "+p1.innerText+"<br>")
+        window.document.write("Manipulando por Tag = "+p1.innerHTML+"<br>")
+        window.alert(p1.innerHTML)
+        window.alert(p1.innerText)
+        
+        //seleciona um objeto pelo ID
+
+        var d = window.document.getElementById("div1")
+        d.style.color = "cyan"
+        window.document.write("Manipulando pelo ID = "+d.innerText+"<br>")
+        window.document.write("Manipulando pelo ID = "+d.innerHTML+"<br>")
+        d.style.background = "green" 
+    
+        //seleciona um objeto pela CLASSE
+       
+        var par = window.document.getElementsByClassName("par1")[0]
+        window.document.write("Manipulando pela Classe = "+par.innerText+"<br>")
+        window.document.write("Manipulando pela Classe = "+par.innerHTML+"<br>")
+    
+        //seleciona um objeto pelo NOME
+
+        var nm = window.document.getElementsByName("par2")[0]
+        window.document.write("Manipulando pelo Nome = "+nm.innerText+"<br>")
+        window.document.write("Manipulando pelo Nome = "+nm.innerHTML+"<br>")
+    
+        //seleciona um objeto pela query selector
+        var qs = window.document.querySelector("p")
+        window.document.write("Manipulando pela query = "+qs.innerText+"<br>")
+        window.document.write("Manipulando pela query = "+qs.innerHTML+"<br>")
+        qs.style.background= "green"
+    </script>
+</body>
+</html>
