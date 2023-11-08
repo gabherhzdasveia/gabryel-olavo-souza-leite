@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta cgaeset="UTF-8"
-        <title>AULA1 - ESTRUTURA BÀSICA</title>
-    </head>
-    <body>
-        <p>Aula de Programação Front-End - 16/02 </p>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estágios da evolução...</h1>
+    <main>
+        <form action="">
+            <p>
+                <label for="iage">Informe sua idade:</label>
+                <input type="number" name="iage" id="iage" min="0" max="150" value="15">
+            </p>
+            <p>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sex" id="sexmas" checked>
+                <label for="sexmas">Masculino</label>
+                <input type="radio" name="sex" id="sexfem">
+                <label for="sexfem">Feminino</label>
+            
+            </p>
+            <p>
+                <input type="button" value="Descubra sua fase" onclick="verificar()" class="btn">
+            </p>
+            <div id="txt"></div>
+            <div>
+                <img id="imagem" src="" alt="" srcset="">
+            </div>
+        </form>
+    </main>
+    <script>
+        function verificar() {
+            const age = document.getElementById("iage").value;
+            const mas = document.getElementById("sexmas");
+            const fem = document.getElementById("sexfem");
+            const txt = document.getElementById("txt"); 
+            
+            if (age <= 17 && mas.checked) {
+                txt.innerHTML = "Você é um menino e têm " + age + " anos.";
+                imagem.src = 'data:image/jpeg;base64,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';
+            }
+            if(age >=17 && mas.checked){
+                txt.innerHTML = "Você é um homem e têm " + age + " anos.";
+                imagem.src = '';
+            }
+            if(age>=59 && mas.checked){
+                txt.innerHTML = "Você é um senhor e têm " + age + " anos.";
+                imagem.src = '';
+            }
 
-    </body>
+            if (age <= 17 && fem.checked) {
+                txt.innerHTML = "Você é uma menina e têm " + age + " anos.";
+                imagem.src = 'https://i.pinimg.com/originals/ed/96/9d/ed969df65ef64946908c13e1f2aff547.png';
+
+            } 
+            if(age >=17 && fem.checked){
+                txt.innerHTML = "Você é uma mulher e têm " + age + " anos.";
+                imagem.src = 'https://w7.pngwing.com/pngs/261/760/png-transparent-catherine-keener-the-croods-ugga-grug-thunk-others-mammal-film-thunk-thumbnail.png';
+            }
+            if(age>=59 && fem.checked){
+                txt.innerHTML = "Você é uma senhora e têm " + age + " anos.";
+                imagem.src = 'https://w7.pngwing.com/pngs/704/395/png-transparent-randy-thom-the-croods-ugga-grug-eep-the-croods.png';
+            }
+        }
+    </script>
+</body>
 </html>
